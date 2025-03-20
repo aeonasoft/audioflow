@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audioflow: News & Trend Updates</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="{{ request.url_for('static', path='css/style.css') }}">
+    <link rel="icon" href="{{ request.url_for('static', path='images/favicon.ico') }}" type="image/png">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="{{ request.url_for('static', path='images/audioflow-logo.png') }}" alt="Audioflow Logo">
+            </div>
+            <div class="hero-text">
+                <h1>Audioflow</h1>
+                <p class="hero-subtitle">News & Trend Updates</p>
+            </div>
+        </div>
+    </header>
+    <div id="alert-box" class="hidden"></div>
+    <main class="main-content">
+        <section class="steps">
+            <h2>How It Works</h2>
+            <p>Follow the easy 3-step process below and start enjoying our service today!</p>
+            <div class="steps-container">
+                <div class="step">
+                    <img src="{{ request.url_for('static', path='images/step1.png') }}" alt="Submit Your Email" class="step-image">
+                    <h3>1. Submit Your Email</h3>
+                    <p>Receive updates straight to your inbox.</p>
+                </div>
+                <div class="step">
+                    <img src="{{ request.url_for('static', path='images/step2.png') }}" alt="Receive Audio Updates" class="step-image">
+                    <h3>2. Receive Trending Updates</h3>
+                    <p>Listen to fresh daily updates.</p>
+                </div>
+                <div class="step">
+                    <img src="{{ request.url_for('static', path='images/step3.png') }}" alt="Enjoy While You Go" class="step-image">
+                    <h3>3. Enjoy News On The Go</h3>
+                    <p>Stay informed on the go!</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Subscribe Today!</h2>
+            <p class="free-updates">Get <em class="free-word">free</em> daily updates by submitting your preferences below.</p>
+            <form id="subscribe-form" method="post" action="/subscribe">
+                <select id="lang_preference" name="lang_preference" class="cta-dropdown" required>
+                    <option value="EN">🇬🇧 English</option>
+                    <option value="DE">🇩🇪 German</option>
+                    <option value="FR">🇫🇷 French</option>
+                </select>
+                <input type="text" id="name" name="name" placeholder="Your name ..." required>
+                <input type="email" id="email_address" name="email_address" placeholder="Your email ..." required>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </section>
+        <section class="audio-samples">
+            <h2>Recent Audio Updates</h2>
+            <p>Stay informed with our recent audio updates, featuring daily news and trending topics in your preferred language. </p>
+            <div class="sample-box">
+                <div class="sample">
+                    <p>📅 2025-02-07</p>
+                    <div class="audio-links">
+                        <span>🇬🇧 English:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250207_11_20__en.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇩🇪 German:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250207_11_20__de.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇫🇷 French:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250207_11_20__fr.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="sample">
+                    <p>📅 2025-02-16</p>
+                    <div class="audio-links">
+                        <span>🇬🇧 English:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250217_07_16__en.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇩🇪 German:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250217_07_16__de.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇫🇷 French:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250217_07_16__fr.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="sample">
+                    <p>📅 2025-02-19</p>
+                    <div class="audio-links">
+                        <span>🇬🇧 English:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250219_21_53__en.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇩🇪 German:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250219_21_53__de.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-links">
+                        <span>🇫🇷 French:</span>
+                        <audio controls>
+                            <source src="{{ request.url_for('static', path='audio/20250219_21_53__fr.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logos">
+            <h2>Trusted News Sources</h2>
+            <p>We bring you content from the most trusted news sources, including <em>BBC News</em>, <em>Hacker News</em>, and <em>Google Trends</em>.</p>
+            <div class="logos-container">
+                <img src="{{ request.url_for('static', path='images/bbc-logo.png') }}"  alt="BBC News" class="news-logo">
+                <img src="{{ request.url_for('static', path='images/hackernews-logo.png') }}"  alt="Hacker News" class="news-logo">
+                <img src="{{ request.url_for('static', path='images/google-trends-logo.png') }}" alt="Google Trends" class="news-logo">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Audioflow. All Rights Reserved.</p>
+        <p class="made-in">Made in Berlin with ❤️ by href="https://x.com/dirkjobosman/"</p>
+    </footer>
+    <script src="{{ request.url_for('static', path='js/subscribe.js') }}"></script>
+</body>
+</html>

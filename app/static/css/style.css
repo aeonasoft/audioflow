@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.hero {
+    background: #4529df;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.hero-logo {
+    background-color: #ffd700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.hero-logo img {
+    max-width: 50%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5%; 
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+
+.hero-subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffd700;
+    margin: 5px 0 0;
+}
+
+.main-content {
+    padding: 40px 20px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.steps {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step {
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.step h3 {
+    font-weight: 600;
+    margin: 15px 0;
+    color: #1c1c1e;
+}
+
+.step p {
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}
+
+.step img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.cta {
+    text-align: center;
+    margin: 50px 0;
+    background: #fff8d7;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cta-dropdown {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #4a4a4c;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    width: 150px;
+}
+
+.cta-dropdown option {
+    color: #333;
+}
+
+.cta input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #4a4a4c;
+    border-radius: 5px;
+    width: 200px;
+    color: #1c1c1e;
+    background: #fff;
+}
+
+.cta button {
+    background: #4a4a4c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background: #333;
+}
+
+.logos {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-logo {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.audio-samples {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.sample-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sample {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+}
+
+.audio-links {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio-links span {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.95em;
+    color: #1c1c1e;
+}
+
+audio {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #4529df;
+    text-align: center;
+    padding: 50px;
+    color: #ffd700;
+    font-size: 1.2em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .made-in {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+p.free-updates .free-word {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 1000;
+    border-radius: 0;
+    color: #fff;
+    transition: opacity 0.5s ease;
+}
+
+.alert.success {
+    background-color: #4caf50;
+}
+
+.alert.error {
+    background-color: #f44336;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
