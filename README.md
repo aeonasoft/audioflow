@@ -2,6 +2,10 @@
 # Audioflow
 The AudioFlow project is a fully automated news service that transforms text-based news into multilingual audio files and delivers them via email. It is designed for scalability and automation, making it a powerful tool for personalized news distribution.
 
+
+![Audioflow Promotion](https://github.com/user-attachments/assets/3b9600cd-c56a-4758-aa17-bc2d4fe47433)
+
+
 ### Container setup, which stems out of the docker compose file:
 
 (a) Worker: `airflow_airflow-worker_1` (Where all the magic happens :)
